@@ -1,0 +1,9 @@
+.form > label {
+    font-weight: 750;
+    margin-right: 10px;
+}
+
+.form > input {
+    width: 40px;
+    outline: #f0f0f0;
+}

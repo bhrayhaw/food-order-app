@@ -1,0 +1,16 @@
+.menu {
+    background-color: #fff;
+    margin-top: 30px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.menulist {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,19 @@
+.cart-button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    background-color: #3d0c0c;
+    padding: 7px 30px;
+    border-radius: 20px;
+    border-style: none;
+    color: #fff;
+}
+
+.item-number{
+    background-color: brown;
+    border-radius: 25px;
+    width: 45px;
+    padding: 7px;
+    text-align: center;
+}
