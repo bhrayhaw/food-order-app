@@ -4,16 +4,14 @@ import MealItemForm from "./MealItemForm";
 import CardContext from "../../store/CartContext";
 
 const MealItem = (props) => {
-    console.log(props.meals)
     const cartCtx = useContext(CardContext);
-    const onAddToCart = (amount) => {
+    const onAddToCart = (amount, meal) => {
         cartCtx.addItem({
-            id: props.meals.id,
-            name: props.meals.name,
+            id: meal.id,
+            name: meal.name,
             amount: amount,
-            price: props.meals.price
+            price: meal.price
         })
-        console.log(cartCtx)
     };
     return (
         <div className={styles.menu}>
@@ -25,7 +23,7 @@ const MealItem = (props) => {
                             <p>{meal.description}</p>
                             <span>${meal.price}</span>
                         </div>
-                        <MealItemForm onAddToCart={onAddToCart}/>
+                        <MealItemForm onAddToCart={(amount) => onAddToCart(amount, meal)}/>
                     </div>
                     <hr />
                 </div>

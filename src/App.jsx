@@ -8,10 +8,9 @@ import CartProvider from "./store/CartProvider.jsx";
 
 const meals = [
     { id: "c1", name: "Sushi", description: "Fishes and Veggies", price: 22.29 },
-    { id: "c2", name: "Sushi", description: "Fishes and Veggies", price: 22.29 },
-    { id: "c3", name: "Sushi", description: "Fishes and Veggies", price: 22.29 },
+    { id: "c2", name: "Pizza", description: "Fishes and Veggies", price: 40.29 },
+    { id: "c3", name: "Shawama", description: "Fishes and Veggies", price: 34.29 },
 ];
-console.log(meals)
 function App() {
     const [showModal, setShowModal] =useState(false)
 
